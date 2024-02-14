@@ -37,19 +37,22 @@ class ViewController: UIViewController {
             updateBackgroundImage()
         }
 
-        private func updateButtonsWithChoices(from step: AdventureStep) {
-            let choices = Array(step.choices.keys)
-            leftButton.isHidden = choices.count < 1
-            rightButton.isHidden = choices.count < 2
-            
-            if !leftButton.isHidden {
-                leftButton.setTitle(choices[0], for: .normal)
-            }
-            
-            if !rightButton.isHidden && choices.count > 1 {
-                rightButton.setTitle(choices[1], for: .normal)
-            }
+    private func updateButtonsWithChoices(from step: AdventureStep) {
+        let choices = Array(step.choices.keys)
+        leftButton.isHidden = choices.count < 1
+        rightButton.isHidden = choices.count < 2
+        
+        if !leftButton.isHidden {
+            leftButton.setTitle(choices[0], for: .normal)
+            leftButton.addTarget(self, action: #selector(choiceMade(_:)), for: .touchUpInside) // Add this line
         }
+        
+        if !rightButton.isHidden && choices.count > 1 {
+            rightButton.setTitle(choices[1], for: .normal)
+            rightButton.addTarget(self, action: #selector(choiceMade(_:)), for: .touchUpInside) // And this line
+        }
+    }
+
 
         func updateBackgroundImage() {
             let imageName = backgroundImageName(for: adventure.currentStepID)

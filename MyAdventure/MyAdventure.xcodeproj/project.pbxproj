@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		80F69CC32B7C6B3D00D66A89 /* MyAdventure in Resources */ = {isa = PBXBuildFile; fileRef = 80F69CC22B7C6B3D00D66A89 /* MyAdventure */; };
 		D85472552B79BAC700271103 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D85472542B79BAC700271103 /* AppDelegate.swift */; };
 		D85472572B79BAC700271103 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D85472562B79BAC700271103 /* SceneDelegate.swift */; };
 		D85472592B79BAC700271103 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D85472582B79BAC700271103 /* ViewController.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		80F69CC22B7C6B3D00D66A89 /* MyAdventure */ = {isa = PBXFileReference; lastKnownFileType = folder; name = MyAdventure; sourceTree = "<group>"; };
 		D85472512B79BAC700271103 /* MyAdventure.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyAdventure.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D85472542B79BAC700271103 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D85472562B79BAC700271103 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -43,6 +45,7 @@
 			isa = PBXGroup;
 			children = (
 				D85472532B79BAC700271103 /* MyAdventure */,
+				80F69CC22B7C6B3D00D66A89 /* MyAdventure */,
 				D85472522B79BAC700271103 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -131,6 +134,7 @@
 				D85472612B79BAC700271103 /* LaunchScreen.storyboard in Resources */,
 				D854725E2B79BAC700271103 /* Assets.xcassets in Resources */,
 				D854725C2B79BAC700271103 /* Main.storyboard in Resources */,
+				80F69CC32B7C6B3D00D66A89 /* MyAdventure in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
